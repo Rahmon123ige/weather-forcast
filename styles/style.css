@@ -92,3 +92,54 @@ button img{
 .weather{
     display: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* For small screens (tablets and below) */
+@media (max-width: 78px) {
+    .card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .search input {
+        width: 65%;
+    }
+
+    .search button {
+        width: 30%;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .col {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* For extra-small screens (phones) */
+@media (max-width: 480px) {
+    .temp {
+        font-size: 1.5rem;
+    }
+
+    .city {
+        font-size: 1rem;
+    }
+
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .col img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
